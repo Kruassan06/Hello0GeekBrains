@@ -7,7 +7,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 private Button nextLayout;   // кнопки
-    private Button backLayout;
+   // private Button backLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,30 +15,9 @@ private Button nextLayout;   // кнопки
         setContentView(R.layout.activity_main);
 
         nextLayout = findViewById(R.id.nextLayout);
-        backLayout = findViewById(R.id.back_Layout);
-
+       // backLayout = findViewById(R.id.back_Layout);
 nextLayout.setOnClickListener(this);
-
-
-  /*  nam(backLayout);
     }
-    static void nam (Button backLayout){
-        backLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()){
-                    case R.id.back_Layout:
-                        break;
-
-                }
-
-
-            }
-        });*/
-
-    }
-
-
     @Override
     public void onClick(View v) {   // процедура переключает между основным и второстепенным
 switch (v.getId()){
