@@ -29,22 +29,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/white"
         tools:ignore="ButtonStyle"
         android:text="@string/_7"
         />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:text="@string/_8"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:text="@string/_9"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:text="@string/del"
             tools:ignore="ButtonStyle" />
 </LinearLayout>
@@ -60,19 +64,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="ButtonStyle"
+            android:background="@color/white"
             android:text="@string/_4"/>
         <Button
             android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
+            android:background="@color/white"
             android:layout_height="wrap_content"
             android:text="@string/_5"/>
         <Button
             android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
+            android:background="@color/white"
             android:layout_height="wrap_content"
             android:text="@string/_6"/>
         <Button
             android:layout_width="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:layout_height="wrap_content"
             android:text="@string/umn"/>
@@ -83,24 +91,29 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:orientation="horizontal">
         <Button
             android:layout_width="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:layout_height="wrap_content"
             android:text="@string/_1"/>
         <Button
         android:layout_width="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
         android:layout_height="wrap_content"
         android:text="@string/_2"/>
         <Button
         android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
+            android:background="@color/white"
         android:layout_height="wrap_content"
         android:text="@string/_3"/>
         <Button
         android:layout_width="wrap_content"
+            android:background="@color/white"
         android:layout_height="wrap_content"
             tools:ignore="ButtonStyle"
         android:text="@string/minus"/>
@@ -114,6 +127,7 @@
         android:orientation="horizontal">
         <Button
             android:layout_width="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:layout_height="wrap_content"
             android:text="@string/c"/>
@@ -121,15 +135,18 @@
             android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:text="@string/_0"/>
         <Button
             android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:text="@string/rav"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             tools:ignore="ButtonStyle"
             android:text="@string/plus"/>
 
@@ -142,8 +159,9 @@
     <Button
         android:id="@+id/back_Layout"
         android:layout_width="wrap_content"
+        android:background="@color/white"
         android:layout_height="wrap_content"
-        android:text="Back"/>
+        android:text="@string/back"/>
     <Space
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
