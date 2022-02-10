@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/_8"
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
@@ -22,7 +22,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/button_minus"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -35,7 +35,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/_6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -49,7 +49,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/_9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
@@ -63,7 +63,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/button_plus"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
@@ -76,7 +76,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/_5"
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -90,7 +90,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
@@ -104,7 +104,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
@@ -118,7 +118,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/button_umn"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
@@ -131,7 +131,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -144,7 +144,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/_0"
         android:layout_width="98dp"
         android:layout_height="0dp"
         android:layout_marginBottom="60dp"
@@ -158,7 +158,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/button_del"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -172,7 +172,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/button_ravn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
@@ -186,7 +186,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
@@ -200,7 +200,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/_2"
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="120dp"
@@ -214,7 +214,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/_7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
@@ -227,19 +227,21 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <EditText
+    <TextView
+        android:id="@+id/edit_number"
         android:layout_width="342dp"
         android:layout_height="65dp"
         android:layout_marginTop="204dp"
         android:background="@color/white"
-
-        android:inputType="numberDecimal"
-        android:padding="20dp"
+        android:gravity="right"
+        android:text=""
+        android:textSize="25dp"
+        android:padding="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor" />
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
 
     <Button
         android:id="@+id/nextLayout"
