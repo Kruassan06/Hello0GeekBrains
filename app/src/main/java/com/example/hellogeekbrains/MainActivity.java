@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 //region Buttons
+/*
+    TextView text_number;
     TextView editText ;//   // TODO: 08.02.2022 потом вот так переделать для красоты.!!!
     public Button nextLayout;   // кнопки и переменные
     public Button b1;
@@ -34,61 +36,67 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button clear;
      private int numberOne;
     private int numberTwo;
-  private String soder;
-
+  public static  String soder = "";
+*/
 
 //endregion
 
+public static final String key = "TextView";
+    Calc calc = new Calc();
 final String TAG  = "";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activite_main);
+
+
 
    //region    Активация кнопок
-        editText = findViewById(R.id.edit_number);
-        b0=findViewById(R.id._0);
-        b1= findViewById(R.id._1);
-        b2 =findViewById(R.id._2);
-        b3 =findViewById(R.id._3);
-        b4 =findViewById(R.id._4);
-        b5 =findViewById(R.id._5);
-        b6 =findViewById(R.id._6);
-        b7=findViewById(R.id._7);
-        b8=findViewById(R.id._8);
-        b9=findViewById(R.id._9);
-        bPlus =findViewById(R.id.button_plus);
-        bMinus=findViewById(R.id.button_minus);
-        clear=findViewById(R.id.clear);
-        bDele=findViewById(R.id.button_del);
-        umno=findViewById(R.id.button_umn);
-       ravno = findViewById(R.id.button_ravn);
-        nextLayout = findViewById(R.id.nextLayout);
-b0.setOnClickListener(this);
-b1.setOnClickListener(this);
-b2.setOnClickListener(this);
-b3.setOnClickListener(this);
-b4.setOnClickListener(this);
-b5.setOnClickListener(this);
-b6.setOnClickListener(this);
-b7.setOnClickListener(this);
-b8.setOnClickListener(this);
-b9.setOnClickListener(this);
-bPlus.setOnClickListener(this);
-bMinus.setOnClickListener(this);
-clear.setOnClickListener(this);
-bDele.setOnClickListener(this);
-umno.setOnClickListener(this);
-ravno.setOnClickListener(this);
-
+        calc.text_number = findViewById(R.id.text_number);
+        calc.editText = findViewById(R.id.edit_number);
+        calc.b0=findViewById(R.id._0);
+        calc.b1= findViewById(R.id._1);
+        calc.b2 =findViewById(R.id._2);
+        calc.b3 =findViewById(R.id._3);
+        calc.b4 =findViewById(R.id._4);
+        calc.b5 =findViewById(R.id._5);
+        calc.b6 =findViewById(R.id._6);
+        calc.b7=findViewById(R.id._7);
+        calc.b8=findViewById(R.id._8);
+        calc.b9=findViewById(R.id._9);
+        calc.bPlus =findViewById(R.id.button_plus);
+        calc.bMinus=findViewById(R.id.button_minus);
+        calc.clear=findViewById(R.id.clear);
+        calc.bDele=findViewById(R.id.button_del);
+        calc.umno=findViewById(R.id.button_umn);
+        calc.ravno = findViewById(R.id.button_ravn);
+        calc.nextLayout = findViewById(R.id.nextLayout);
+        calc.text_number.setOnClickListener(this);
+        calc.b0.setOnClickListener(this);
+        calc.b1.setOnClickListener(this);
+        calc.b2.setOnClickListener(this);
+        calc.b3.setOnClickListener(this);
+        calc.b4.setOnClickListener(this);
+        calc.b5.setOnClickListener(this);
+        calc.b6.setOnClickListener(this);
+        calc.b7.setOnClickListener(this);
+        calc.b8.setOnClickListener(this);
+        calc.b9.setOnClickListener(this);
+        calc.bPlus.setOnClickListener(this);
+        calc.bMinus.setOnClickListener(this);
+        calc.clear.setOnClickListener(this);
+        calc.bDele.setOnClickListener(this);
+        calc.umno.setOnClickListener(this);
+        calc.ravno.setOnClickListener(this);
 
     //endregion
 
+        }
 
-        Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
-    }
+     //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -124,84 +132,85 @@ ravno.setOnClickListener(this);
     }
 
     @Override
-    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
-        super.onSaveInstanceState(outState, outPersistentState);
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        calc.soder = calc.editText.getText().toString();
+
+outState.putSerializable(key,calc.soder);
     }
 
     @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        calc.editText= (TextView) savedInstanceState.getSerializable(key) ;
+    }
+
+
+    private void setText (){
+
+
+    }
+    @Override
     public void onClick(View v) {
+
         switch (v.getId()){
             case R.id._0:
-                editText.append(b0.getText());
+                calc.editText.append(calc.b0.getText());
                 break;
            case R.id._1:
-               editText.append(b1.getText());
+               calc.editText.append(calc.b1.getText());
 
                 break;
             case R.id._2:
-                editText.append(b2.getText());
+                calc.editText.append(calc.b2.getText());
                 break;
             case R.id._3:
-                editText.append(b3.getText());
+                calc.editText.append(calc.b3.getText());
                 break;
             case R.id._4:
-                editText.append(b4.getText());
+                calc.editText.append(calc.b4.getText());
                 break;
             case R.id._5:
-                editText.append(b5.getText());
+                calc.editText.append(calc.b5.getText());
                 break;
             case R.id._6:
-                editText.append(b6.getText());
+                calc.editText.append(calc.b6.getText());
                 break;
             case R.id._7:
-                editText.append(b7.getText());
+                calc.editText.append(calc.b7.getText());
                 break;
             case R.id._8:
-                editText.append(b8.getText());
+                calc.editText.append(calc.b8.getText());
                 break;
             case R.id._9:
-                editText.append(b9.getText());
+                calc.editText.append(calc.b9.getText());
                 break;
             case R.id.button_minus:
-                numberOne = Integer.parseInt(String.valueOf(editText.getText()));
+                if (calc.editText!=null){
+             //  soder = editText.getText().toString();
+                }
+                calc.editText.append(calc.bMinus.getText());
+                calc.text_number.append(calc.editText.getText());
 
-                editText.append(bMinus.getText());
                 break;
             case R.id.button_ravn:
-                numberTwo = Integer.parseInt(String.valueOf(editText.getText()));
-                editText.append(ravno.getText());
+                calc.editText.append(calc.ravno.getText());
                 break;
-
             case R.id.button_plus:
-              numberOne = Integer.parseInt(String.valueOf(editText.getText()));
-
-                editText.append(bPlus.getText());
-                editText.setText("");
+                calc.editText.append(calc.bPlus.getText());
                     break;
             case R.id.clear:
-                editText.setText("");
+                calc.text_number.setText("");
+                calc.editText.setText(null);
                 break;
-
             case R.id.button_del:
-                numberOne = Integer.parseInt(String.valueOf(editText.getText()));
-
-                editText.append(bDele.getText());
-
-
+                calc.editText.append(calc.bDele.getText());
                 break;
 
         }
-
-
     }
 
-    public void Calcul (){
-        if (editText != null
-        ){
-
-
-        }
-    }
 
 }
 
