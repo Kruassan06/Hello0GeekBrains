@@ -41,21 +41,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //endregion
 
-public static final String key = "TextView";
+public static final String key_one = "key_one";
+public static final String key_two = "key_two";
+    final String TAG  = "";
+
+
     Calc calc = new Calc();
-final String TAG  = "";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activite_main);
 
-
-
    //region    Активация кнопок
         calc.text_number = findViewById(R.id.text_number);
-        calc.editText = findViewById(R.id.edit_number);
+        calc.editText = findViewById(R.id.edit_text);
         calc.b0=findViewById(R.id._0);
         calc.b1= findViewById(R.id._1);
         calc.b2 =findViewById(R.id._2);
@@ -72,7 +71,8 @@ final String TAG  = "";
         calc.bDele=findViewById(R.id.button_del);
         calc.umno=findViewById(R.id.button_umn);
         calc.ravno = findViewById(R.id.button_ravn);
-        calc.nextLayout = findViewById(R.id.nextLayout);
+
+
         calc.text_number.setOnClickListener(this);
         calc.b0.setOnClickListener(this);
         calc.b1.setOnClickListener(this);
@@ -90,67 +90,42 @@ final String TAG  = "";
         calc.bDele.setOnClickListener(this);
         calc.umno.setOnClickListener(this);
         calc.ravno.setOnClickListener(this);
-
     //endregion
-
-        }
-
+    }
      //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d(TAG,"onStart() called");
-    }
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.d(TAG, "onPause() called");
-    }
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d(TAG, "onStop() called");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.d(TAG, "onRestart() called");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(TAG, "onDestroy() called");
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
+        //calc.editText.append(calc.TextView_One);
+    //    calc.text_number.append(calc.TextView_Two);
         Log.d(TAG, "onResume() called");
-    }
 
+    }
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        calc.soder = calc.editText.getText().toString();
 
-outState.putSerializable(key,calc.soder);
-    }
+      //  outState.putString(key_one, calc.editText.getText().toString());   // передаю в перменную String значения EditText
+     //    outState.getString(key_two,calc.text_number.getText().toString());  // передаю в перменную String значения TextVeiw
 
+
+        }
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+        Log.d(TAG, "onRestoreInstanceState() called");
 
-        calc.editText= (TextView) savedInstanceState.getSerializable(key) ;
-    }
-
-
-    private void setText (){
+   //   calc.editText.setText(savedInstanceState.getString(key_one));
+    //    calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
 
 
     }
+
+
+
+
+
+
     @Override
     public void onClick(View v) {
 
@@ -187,31 +162,30 @@ outState.putSerializable(key,calc.soder);
                 calc.editText.append(calc.b9.getText());
                 break;
             case R.id.button_minus:
-                if (calc.editText!=null){
-             //  soder = editText.getText().toString();
-                }
                 calc.editText.append(calc.bMinus.getText());
                 calc.text_number.append(calc.editText.getText());
-
+                calc.editText.setText(null);
                 break;
             case R.id.button_ravn:
                 calc.editText.append(calc.ravno.getText());
                 break;
             case R.id.button_plus:
                 calc.editText.append(calc.bPlus.getText());
+                calc.text_number.append(calc.editText.getText());
+                calc.editText.setText(null);
                     break;
             case R.id.clear:
-                calc.text_number.setText("");
+                calc.text_number.setText(null);
                 calc.editText.setText(null);
                 break;
             case R.id.button_del:
                 calc.editText.append(calc.bDele.getText());
+                calc.text_number.append(calc.editText.getText());
+                calc.editText.setText(null);
                 break;
 
         }
     }
-
-
 }
 
 

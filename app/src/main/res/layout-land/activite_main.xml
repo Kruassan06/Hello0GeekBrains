@@ -9,71 +9,165 @@
     >
 
 
-
-
     <Button
         android:id="@+id/_8"
-        android:layout_width="100dp"
+        android:layout_width="98dp"
+
         android:layout_height="wrap_content"
-        android:layout_marginBottom="192dp"
-        android:background="@color/buttonBackground"
+        android:layout_marginBottom="240dp"
+        android:background="#00000000"
         android:text="@string/_8"
+        android:textColor="@color/buttonBackground"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_5"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_5"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_2"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_2"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/_0"
-        android:layout_width="100dp"
+        android:layout_width="98dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="12dp"
-        android:background="@color/buttonBackground"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
         android:text="@string/_0"
+        android:textColor="@color/buttonBackground"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_2"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:text="@string/_2"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_5"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:background="#00000000"
+        android:text="@string/_5"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:background="#00000000"
+        android:text="@string/minus"
+        android:textColor="@color/buttonBackground"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:background="#00000000"
+        android:text="@string/_9"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_ravn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
+        android:text="@string/rav"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:background="#00000000"
+        android:text="@string/_6"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:text="@string/_3"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:text="@string/plus"
+        android:textSize="29sp"
+        android:textColor="@color/buttonBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/_4"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:background="@color/buttonBackground"
+        android:layout_marginBottom="180dp"
+        android:background="#00000000"
         android:text="@string/_4"
+        android:textColor="@color/buttonBackground"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,187 +176,112 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/_7"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="192dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_7"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_1"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_1"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
         android:id="@+id/button_umn"
-        android:layout_width="100dp"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="192dp"
-        android:background="@color/buttonBackground"
+        android:layout_marginBottom="240dp"
+        android:background="#00000000"
         android:text="@string/umn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/text_number"
-        android:layout_width="239dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="156dp"
-        android:background="@color/white"
-        android:gravity="right"
-        android:padding="3dp"
-        android:textStyle="bold"
-        android:text=""
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
-
-    <TextView
-        android:id="@+id/edit_number"
-        android:layout_width="239dp"
-        android:layout_height="138dp"
-        android:layout_marginTop="188dp"
-        android:background="@color/white"
-        android:gravity="right"
-        android:paddingTop="90dp"
-        android:text=""
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
-
-    <Button
-        android:id="@+id/button_del"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/del"
         android:textSize="24sp"
+        android:textColor="@color/buttonBackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_plus"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/plus"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_9"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="192dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_9"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_ravn"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/rav"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_3"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_3"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_6"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/_6"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/clear"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:background="@color/buttonBackground"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
+        android:textColor="@color/buttonBackground"
         android:text="@string/c"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_minus"
-        android:layout_width="100dp"
+        android:id="@+id/button_del"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="132dp"
-        android:background="@color/buttonBackground"
-        android:text="@string/minus"
+        android:layout_marginBottom="60dp"
+        android:background="#00000000"
+        android:text="@string/del"
+        android:textColor="@color/buttonBackground"
+        android:textSize="29sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="#00000000"
+        android:textColor="@color/buttonBackground"
+        android:text="@string/_1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:background="#00000000"
+        android:text="@string/_7"
+        android:textColor="@color/buttonBackground"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/edit_number"
+        android:layout_width="253dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="188dp"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/buttonBackground"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="253dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="152dp"
+        android:background="#00000000"
+        android:gravity="right"
+        android:padding="3dp"
+        android:text=""
+        android:textColor="@color/buttonBackground"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
+
+
 
 </android.support.constraint.ConstraintLayout>

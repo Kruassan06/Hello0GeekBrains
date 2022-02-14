@@ -14,7 +14,6 @@
     <Button
         android:id="@+id/_8"
         android:layout_width="98dp"
-
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
         android:text="@string/_8"
@@ -249,23 +248,22 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/edit_number"
+
+    <EditText
+android:id="@+id/edit_text"
         android:layout_width="347dp"
         android:layout_height="68dp"
         android:layout_marginTop="236dp"
-        android:gravity="right"
-        android:padding="10dp"
-        android:text=""
-        android:textStyle="bold"
+        android:backgroundTint="@color/buttonBackground"
 
+        android:textSize="25sp"
+        android:focusable="false"
+        android:gravity="right"
         android:textColor="@color/buttonBackground"
-        android:textSize="35dp"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_number"
@@ -285,17 +283,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
 
-    <Button
-        android:id="@+id/nextLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nextlayout"
-        android:textAllCaps="true"
-        android:textSize="12sp"
-        android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="757dp" />
+
 
 </android.support.constraint.ConstraintLayout>
