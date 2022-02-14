@@ -105,8 +105,8 @@ public static final String key_two = "key_two";
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-      //  outState.putString(key_one, calc.editText.getText().toString());   // передаю в перменную String значения EditText
-     //    outState.getString(key_two,calc.text_number.getText().toString());  // передаю в перменную String значения TextVeiw
+     outState.putString(key_one, calc.editText.getText().toString());
+     outState.putString(key_two,calc.text_number.getText().toString());  // передаю в перменную String значения TextVeiw
 
 
         }
@@ -115,8 +115,8 @@ public static final String key_two = "key_two";
         super.onRestoreInstanceState(savedInstanceState);
         Log.d(TAG, "onRestoreInstanceState() called");
 
-   //   calc.editText.setText(savedInstanceState.getString(key_one));
-    //    calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
+        calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
+     calc.editText.setText(savedInstanceState.getString(key_one));
 
 
     }

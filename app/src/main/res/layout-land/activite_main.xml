@@ -249,21 +249,21 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/edit_number"
+
+    <EditText
+        android:id="@+id/edit_text"
         android:layout_width="253dp"
         android:layout_height="113dp"
         android:layout_marginTop="188dp"
-        android:gravity="right"
-        android:padding="10dp"
-        android:text=""
-        android:textColor="@color/buttonBackground"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
+        android:backgroundTint="@color/buttonBackground"
+        android:textSize="25sp"
+        android:focusable="false"
+        android:gravity="right"
+        android:textColor="@color/buttonBackground"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_number"
