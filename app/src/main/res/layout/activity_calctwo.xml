@@ -2,37 +2,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:background="@drawable/fon_calc">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_calc">
 
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="160dp" />
-<EditText
-    android:layout_width="300dp"
-    android:layout_height="80dp"
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="80dp"
 
-    android:inputType="numberDecimal"
-    android:layout_gravity="center"
-    tools:ignore="Autofill,LabelFor" />
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        tools:ignore="Autofill,LabelFor" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        tools:ignore="ButtonStyle"
-        android:text="@string/_7"
-        />
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            tools:ignore="ButtonStyle"
+            android:text="@string/_7"
+            />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
             android:background="@color/white"
             android:text="@string/del"
             tools:ignore="ButtonStyle" />
-</LinearLayout>
+    </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
@@ -100,23 +100,23 @@
             android:layout_height="wrap_content"
             android:text="@string/_1"/>
         <Button
-        android:layout_width="wrap_content"
+            android:layout_width="wrap_content"
             android:background="@color/white"
             tools:ignore="ButtonStyle"
-        android:layout_height="wrap_content"
-        android:text="@string/_2"/>
+            android:layout_height="wrap_content"
+            android:text="@string/_2"/>
         <Button
-        android:layout_width="wrap_content"
+            android:layout_width="wrap_content"
             tools:ignore="ButtonStyle"
             android:background="@color/white"
-        android:layout_height="wrap_content"
-        android:text="@string/_3"/>
+            android:layout_height="wrap_content"
+            android:text="@string/_3"/>
         <Button
-        android:layout_width="wrap_content"
+            android:layout_width="wrap_content"
             android:background="@color/white"
-        android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             tools:ignore="ButtonStyle"
-        android:text="@string/minus"/>
+            android:text="@string/minus"/>
     </LinearLayout>
     <Space
         android:layout_width="match_parent"
@@ -151,7 +151,7 @@
             android:text="@string/plus"/>
 
 
-</LinearLayout>
+    </LinearLayout>
     <Space
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
