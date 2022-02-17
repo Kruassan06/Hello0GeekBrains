@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
     android:layout_height="match_parent"
-    android:background="@drawable/fon_tsifri_34"
+    android:background="@drawable/fon_vaz21099"
     tools:context=".MainActivity">
 
+
+
+
     <Button
-        android:id="@+id/button23"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_8"
+        style="@style/CalcButton"
         android:text="@string/_8"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttonSize_7_8_9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
@@ -22,12 +23,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button27"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/button_minus"
+       style="@style/CalcButton_o"
         android:text="@string/minus"
+        android:layout_marginBottom="@dimen/buttonSize_4_5_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.983"
@@ -35,13 +34,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_6"
+        style="@style/CalcButton"
         android:text="@string/_6"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttonSize_4_5_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.711"
@@ -49,13 +45,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_9"
+        style="@style/CalcButton"
+        android:layout_marginBottom="@dimen/buttonSize_7_8_9"
         android:text="@string/_9"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.711"
@@ -63,12 +56,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button26"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/button_plus"
+        style="@style/CalcButton_o"
         android:text="@string/plus"
+        android:layout_marginBottom="@dimen/ButtonSize_1_2_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.983"
@@ -76,13 +67,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button22"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_5"
+        style="@style/CalcButton"
         android:text="@string/_5"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttonSize_4_5_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
@@ -90,13 +78,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_4"
+        style="@style/CalcButton"
         android:text="@string/_4"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttonSize_4_5_6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.022"
@@ -104,13 +89,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_3"
+        style="@style/CalcButton"
         android:text="@string/_3"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/ButtonSize_1_2_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.711"
@@ -118,12 +100,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button19"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/button_umn"
+        style="@style/CalcButton_o"
         android:text="@string/umn"
+        android:layout_marginBottom="@dimen/buttonSize_7_8_9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.986"
@@ -131,26 +111,20 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/clear"
+        style="@style/CalcButton"
         android:text="@string/c"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/down_buttonSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button13"
-        android:layout_width="98dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_0"
+        style="@style/CalcButton"
         android:text="@string/_0"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/down_buttonSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
@@ -158,13 +132,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button14"
-        android:layout_width="70dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/button_del"
+        style="@style/CalcButton_o"
         android:text="@string/del"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/down_buttonSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.983"
@@ -172,13 +143,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/button_ravn"
+        style="@style/CalcButton"
         android:text="@string/rav"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/down_buttonSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.711"
@@ -186,13 +154,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_1"
+        style="@style/CalcButton"
         android:text="@string/_1"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/ButtonSize_1_2_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -200,13 +165,10 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button17"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_2"
+        style="@style/CalcButton"
         android:text="@string/_2"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/ButtonSize_1_2_3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
@@ -214,45 +176,64 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="@color/buttonBackground"
+        android:id="@+id/_7"
+        style="@style/CalcButton"
         android:text="@string/_7"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttonSize_7_8_9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:layout_width="342dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="204dp"
-        android:background="@color/white"
 
-        android:inputType="numberDecimal"
-        android:padding="20dp"
+    <EditText
+android:id="@+id/edit_text"
+        android:layout_width="400dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="236dp"
+        android:backgroundTint="@color/white"
+        android:textSize="25sp"
+        android:focusable="false"
+        android:gravity="right"
+
+        android:layout_marginRight="20sp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor" />
+        tools:ignore="RtlHardcoded"
+        android:inputType="none"
+        android:importantForAutofill="no" />
 
-    <Button
-        android:id="@+id/nextLayout"
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="347dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="204dp"
+        android:background="#00000000"
+        android:gravity="right"
+        android:padding="3dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textColor="#FBF8F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
+
+    <Switch
+        android:id="@+id/switch_themeNight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nextlayout"
-        android:textAllCaps="true"
-        android:textSize="12sp"
-        android:typeface="normal"
+        android:layout_marginBottom="352dp"
+        android:text="@string/next_theme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="757dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
