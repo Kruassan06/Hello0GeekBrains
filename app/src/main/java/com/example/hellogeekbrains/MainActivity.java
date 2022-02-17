@@ -4,6 +4,7 @@ import android.nfc.Tag;
 import android.os.PersistableBundle;
 import android.os.TestLooperManager;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,33 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-//region Buttons
-/*
-    TextView text_number;
-    TextView editText ;//   // TODO: 08.02.2022 потом вот так переделать для красоты.!!!
-    public Button nextLayout;   // кнопки и переменные
-    public Button b1;
-    private Button b2;
-    private Button b3;
-    private Button b4;
-    private Button b5;
-    private Button b6;
-    private Button b7;
-    private Button b8;
-    private Button b9;
-    private Button b0 ;//=findViewById(R.id._0);
-    private Button bPlus;
-    private Button bMinus;
-    private Button bDele;
-    private Button umno;
-    private Button ravno ;
-    private Button clear;
-     private int numberOne;
-    private int numberTwo;
-  public static  String soder = "";
-*/
 
-//endregion
 
 public static final String key_one = "key_one";
 public static final String key_two = "key_two";
@@ -71,8 +46,9 @@ public static final String key_two = "key_two";
         calc.bDele=findViewById(R.id.button_del);
         calc.umno=findViewById(R.id.button_umn);
         calc.ravno = findViewById(R.id.button_ravn);
+        calc.switch_themeNight = findViewById(R.id.switch_themeNight);
 
-
+        calc.switch_themeNight.setOnClickListener(this);
         calc.text_number.setOnClickListener(this);
         calc.b0.setOnClickListener(this);
         calc.b1.setOnClickListener(this);
@@ -107,8 +83,7 @@ public static final String key_two = "key_two";
 
      outState.putString(key_one, calc.editText.getText().toString());
      outState.putString(key_two,calc.text_number.getText().toString());  // передаю в перменную String значения TextVeiw
-
-
+        //ConstraintLayout da = findViewById(R.id.)
         }
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
@@ -182,6 +157,12 @@ public static final String key_two = "key_two";
                 calc.editText.append(calc.bDele.getText());
                 calc.text_number.append(calc.editText.getText());
                 calc.editText.setText(null);
+                break;
+            case R.id.switch_themeNight:
+
+// Не понял еще как реализовать переход на темую тему..
+
+
                 break;
 
         }

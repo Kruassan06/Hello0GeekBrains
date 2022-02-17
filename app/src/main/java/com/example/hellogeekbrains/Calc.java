@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import java.io.Serializable;
@@ -37,6 +38,7 @@ public class Calc extends AppCompatActivity implements Serializable {
     public int numberTwo;
     public  String TextView_One = null;
     public  String TextView_Two = null;
+    public Switch switch_themeNight;
 /*
 
  */

@@ -2,173 +2,85 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon_tsifri_34"
+    android:background="@drawable/fon_vaz21099"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
 
 
+
     <Button
         android:id="@+id/_8"
-        android:layout_width="98dp"
-
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/_8"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttons_calc_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_0"
-        android:layout_width="98dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="60dp"
-        android:background="#00000000"
-        android:text="@string/_0"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_2"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="#00000000"
-        android:text="@string/_2"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_5"
-        android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="#00000000"
-        android:text="@string/_5"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_minus"
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/minus"
-        android:textColor="@color/buttonBackground"
-        android:textSize="40sp"
+        android:layout_marginBottom="@dimen/between_up7_down1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/_9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="#00000000"
-        android:text="@string/_9"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button_ravn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="#00000000"
-        android:text="@string/rav"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/_6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/_6"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/between_up7_down1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/_3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="#00000000"
-        android:text="@string/_3"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
+        android:id="@+id/_9"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/_9"
+        android:layout_marginBottom="@dimen/buttons_calc_up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_plus"
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/plus"
-        android:textSize="29sp"
-        android:textColor="@color/buttonBackground"
+        android:layout_marginBottom="@dimen/buttons_calc_two"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/_5"
+        style="@style/CalcButton_horizont_operation"
+        android:layout_marginBottom="@dimen/between_up7_down1"
+        android:text="@string/_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="180dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/_4"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/between_up7_down1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.022"
@@ -176,58 +88,75 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_umn"
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="#00000000"
-        android:text="@string/umn"
-        android:textSize="24sp"
-        android:textColor="@color/buttonBackground"
+        android:id="@+id/_3"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/_3"
+        android:layout_marginBottom="@dimen/buttons_calc_two"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.711"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_umn"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/umn"
+        android:layout_marginBottom="@dimen/buttons_calc_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.986"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="#00000000"
-        android:textColor="@color/buttonBackground"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/c"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttons_calc_down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button_del"
-        android:layout_width="85dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
-        android:background="#00000000"
-        android:text="@string/del"
-        android:textColor="@color/buttonBackground"
-        android:textSize="29sp"
+        android:id="@+id/_0"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/_0"
+        android:layout_marginBottom="@dimen/buttons_calc_down"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_del"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/del"
+        android:layout_marginBottom="@dimen/buttons_calc_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_ravn"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/rav"
+        android:layout_marginBottom="@dimen/buttons_calc_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.711"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="#00000000"
-        android:textColor="@color/buttonBackground"
+        style="@style/CalcButton_horizont_operation"
         android:text="@string/_1"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/buttons_calc_two"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -235,14 +164,23 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/_2"
+        style="@style/CalcButton_horizont_operation"
+        android:text="@string/_2"
+
+        android:layout_marginBottom="@dimen/buttons_calc_two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
         android:id="@+id/_7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:background="#00000000"
+        style="@style/CalcButton_horizont_operation"
+
+        android:layout_marginBottom="@dimen/buttons_calc_up"
         android:text="@string/_7"
-        android:textColor="@color/buttonBackground"
-        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -252,36 +190,52 @@
 
     <EditText
         android:id="@+id/edit_text"
-        android:layout_width="253dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="188dp"
-        app:layout_constraintHorizontal_bias="0.729"
-        android:backgroundTint="@color/buttonBackground"
-        android:textSize="25sp"
+        android:layout_width="753dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="128dp"
+        android:backgroundTint="@color/white"
+
+
         android:focusable="false"
         android:gravity="right"
-        android:textColor="@color/buttonBackground"
+        android:paddingTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType=""
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,RtlHardcoded" />
 
     <TextView
         android:id="@+id/text_number"
-        android:layout_width="253dp"
+        android:layout_width="753dp"
         android:layout_height="33dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="92dp"
         android:background="#00000000"
         android:gravity="right"
         android:padding="3dp"
         android:text=""
-        android:textColor="@color/buttonBackground"
-        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
 
+    <Switch
+        android:id="@+id/switch_themeNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="168dp"
+        android:text="@string/next_theme"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
