@@ -1,5 +1,7 @@
 package com.example.hellogeekbrains;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.nfc.Tag;
 import android.os.PersistableBundle;
 import android.os.TestLooperManager;
@@ -28,7 +30,7 @@ public static final String key_two = "key_two";
         setContentView(R.layout.activite_main);
 
    //region    Активация кнопок
-        calc.text_number = findViewById(R.id.text_number);
+       // calc.text_number = findViewById(R.id.text_number);
         calc.editText = findViewById(R.id.edit_text);
         calc.b0=findViewById(R.id._0);
         calc.b1= findViewById(R.id._1);
@@ -46,10 +48,11 @@ public static final String key_two = "key_two";
         calc.bDele=findViewById(R.id.button_del);
         calc.umno=findViewById(R.id.button_umn);
         calc.ravno = findViewById(R.id.button_ravn);
-        calc.switch_themeNight = findViewById(R.id.switch_themeNight);
+        calc.theme = findViewById(R.id.choice_button);
+     //   calc.switch_themeNight = findViewById(R.id.switch_themeNight);
 
-        calc.switch_themeNight.setOnClickListener(this);
-        calc.text_number.setOnClickListener(this);
+//        calc.switch_themeNight.setOnClickListener(this);
+       // calc.text_number.setOnClickListener(this);
         calc.b0.setOnClickListener(this);
         calc.b1.setOnClickListener(this);
         calc.b2.setOnClickListener(this);
@@ -66,6 +69,7 @@ public static final String key_two = "key_two";
         calc.bDele.setOnClickListener(this);
         calc.umno.setOnClickListener(this);
         calc.ravno.setOnClickListener(this);
+        calc.theme.setOnClickListener(this);
     //endregion
     }
      //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
@@ -82,20 +86,23 @@ public static final String key_two = "key_two";
         super.onSaveInstanceState(outState);
 
      outState.putString(key_one, calc.editText.getText().toString());
-     outState.putString(key_two,calc.text_number.getText().toString());  // передаю в перменную String значения TextVeiw
-        //ConstraintLayout da = findViewById(R.id.)
+
         }
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.d(TAG, "onRestoreInstanceState() called");
 
-        calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
+        //calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
      calc.editText.setText(savedInstanceState.getString(key_one));
 
 
     }
 
+public void startActivity (){
+        Intent intent = new Intent(MainActivity.this, chose_theme.class);
+        startActivity(intent);
+    }
 
 
 
@@ -121,9 +128,7 @@ public static final String key_two = "key_two";
             case R.id._4:
                 calc.editText.append(calc.b4.getText());
                 break;
-            case R.id._5:
-                calc.editText.append(calc.b5.getText());
-                break;
+            case R.id._5: calc.editText.append(calc.b5.getText());break;
             case R.id._6:
                 calc.editText.append(calc.b6.getText());
                 break;
@@ -137,36 +142,68 @@ public static final String key_two = "key_two";
                 calc.editText.append(calc.b9.getText());
                 break;
             case R.id.button_minus:
-                calc.editText.append(calc.bMinus.getText());
-                calc.text_number.append(calc.editText.getText());
+                calc.numberOne = Integer.parseInt(calc.editText.getText().toString());
+                calc.operation = 1;
                 calc.editText.setText(null);
                 break;
-            case R.id.button_ravn:
-                calc.editText.append(calc.ravno.getText());
+
+            case R.id.button_umn:
+                calc.numberOne = Integer.parseInt(calc.editText.getText().toString());
+                calc.operation = 0;
+                calc.editText.setText("");
                 break;
             case R.id.button_plus:
-                calc.editText.append(calc.bPlus.getText());
-                calc.text_number.append(calc.editText.getText());
-                calc.editText.setText(null);
+                calc.numberOne = Integer.parseInt(calc.editText.getText().toString());
+                calc.operation = 2;
+                    calc.editText.setText("");
                     break;
             case R.id.clear:
-                calc.text_number.setText(null);
+
                 calc.editText.setText(null);
                 break;
             case R.id.button_del:
-                calc.editText.append(calc.bDele.getText());
-                calc.text_number.append(calc.editText.getText());
+                calc.operation = 3;
                 calc.editText.setText(null);
                 break;
-            case R.id.switch_themeNight:
-
-// Не понял еще как реализовать переход на темую тему..
-
+            case R.id.button_ravn:
+                calc.numberTwo = Integer.parseInt(calc.editText.getText().toString());
+                calc(calc.numberOne,calc.numberTwo);
 
                 break;
-
+            case R.id.choice_button:
+                startActivity();
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
+
+    public int calc ( int number, int numberTwo){
+switch (calc.operation){
+    case 0:
+        number = number * numberTwo;
+        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+        break;
+    case 1:
+        number = number - numberTwo;
+        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+        break;
+    case 2:
+        number = number + numberTwo;
+        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+        break;
+    case 3:
+        number = number / numberTwo;
+        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+        break;
+    case 4:
+        break;
+}
+        return 0;
+
+    }
+
+
 }
 
 

@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/fon_vaz21099"
     tools:context=".MainActivity">
-
-
-
-
     <Button
         android:id="@+id/_8"
         style="@style/CalcButton"
@@ -21,7 +17,6 @@
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/button_minus"
        style="@style/CalcButton_o"
@@ -32,7 +27,6 @@
         app:layout_constraintHorizontal_bias="0.983"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/_6"
         style="@style/CalcButton"
@@ -188,52 +182,58 @@
 
 
     <EditText
-android:id="@+id/edit_text"
-        android:layout_width="400dp"
+        android:id="@+id/edit_text"
+        android:layout_width="390dp"
         android:layout_height="45dp"
         android:layout_marginTop="236dp"
+        android:layout_marginRight="20sp"
         android:backgroundTint="@color/white"
-        android:textSize="25sp"
         android:focusable="false"
         android:gravity="right"
 
-        android:layout_marginRight="20sp"
+        android:importantForAutofill="no"
+        android:inputType="none"
         android:paddingTop="8dp"
         android:textColor="@color/white"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlHardcoded"
-        android:inputType="none"
-        android:importantForAutofill="no" />
+        tools:ignore="RtlHardcoded" />
 
-    <TextView
+    <EditText
         android:id="@+id/text_number"
-        android:layout_width="347dp"
+        android:layout_width="390dp"
         android:layout_height="34dp"
         android:layout_marginTop="204dp"
         android:background="#00000000"
+        android:focusable="false"
         android:gravity="right"
         android:padding="3dp"
         android:text=""
-        android:textSize="20dp"
         android:textColor="#FBF8F8"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
 
-    <Switch
-        android:id="@+id/switch_themeNight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="352dp"
-        android:text="@string/next_theme"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/choice_button"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="#00000000"
+        android:paddingBottom="10sp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

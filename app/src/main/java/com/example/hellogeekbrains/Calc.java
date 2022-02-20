@@ -15,8 +15,20 @@ import java.io.Serializable;
 public class Calc extends AppCompatActivity implements Serializable {
 //region Buttons
 
-    TextView text_number;
-    EditText editText ;//   // TODO: 08.02.2022 потом вот так переделать для красоты.!!!
+   // EditText text_number = null;
+
+
+
+
+    public EditText getEditText() {
+        return editText;
+    }
+
+    public void setEditText(EditText editText) {
+        this.editText = editText;
+    }
+
+    EditText editText = null;//   // TODO: 08.02.2022 потом вот так переделать для красоты.!!!
     // кнопки и переменные
     public Button b1;
     public Button b2;
@@ -27,7 +39,7 @@ public class Calc extends AppCompatActivity implements Serializable {
     public Button b7;
     public Button b8;
     public Button b9;
-    public Button b0 ;//=findViewById(R.id._0);
+    public Button b0 ;
     public Button bPlus;
     public Button bMinus;
     public Button bDele;
@@ -36,13 +48,22 @@ public class Calc extends AppCompatActivity implements Serializable {
     public Button clear;
     public int numberOne;
     public int numberTwo;
-    public  String TextView_One = null;
-    public  String TextView_Two = null;
+    public int operation;
+    public  String TextView_One;
+    public  String TextView_Two;
     public Switch switch_themeNight;
+    public Button theme;
 /*
 
  */
+public int calc (){
 
+
+
+
+
+    return 0;
+}
 
 
 //endregion
