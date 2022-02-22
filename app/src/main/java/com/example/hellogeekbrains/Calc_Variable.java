@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.io.Serializable;
 
-public class Calc extends AppCompatActivity implements Serializable {
+public class Calc_Variable extends AppCompatActivity implements Serializable {
 //region Buttons
 
    // EditText text_number = null;
@@ -28,7 +28,7 @@ public class Calc extends AppCompatActivity implements Serializable {
         this.editText = editText;
     }
 
-    EditText editText = null;//   // TODO: 08.02.2022 потом вот так переделать для красоты.!!!
+    EditText editText = null;
     // кнопки и переменные
     public Button b1;
     public Button b2;

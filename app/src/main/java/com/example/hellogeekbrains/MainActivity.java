@@ -1,19 +1,12 @@
 package com.example.hellogeekbrains;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.nfc.Tag;
-import android.os.PersistableBundle;
-import android.os.TestLooperManager;
 import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.CompoundButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,7 +16,7 @@ public static final String key_two = "key_two";
     final String TAG  = "";
 
 
-    Calc calc = new Calc();
+    Calc_Variable calc = new Calc_Variable();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +42,7 @@ public static final String key_two = "key_two";
         calc.umno=findViewById(R.id.button_umn);
         calc.ravno = findViewById(R.id.button_ravn);
         calc.theme = findViewById(R.id.choice_button);
+        calc.switch_themeNight = findViewById(R.id.switch_themeNight);
      //   calc.switch_themeNight = findViewById(R.id.switch_themeNight);
 
 //        calc.switch_themeNight.setOnClickListener(this);
@@ -70,6 +64,8 @@ public static final String key_two = "key_two";
         calc.umno.setOnClickListener(this);
         calc.ravno.setOnClickListener(this);
         calc.theme.setOnClickListener(this);
+       calc.switch_themeNight.setOnClickListener(this);
+
     //endregion
     }
      //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
@@ -103,7 +99,11 @@ public void startActivity (){
         Intent intent = new Intent(MainActivity.this, chose_theme.class);
         startActivity(intent);
     }
+public void two_calc (){
+        Intent inten_two_calc = new Intent(MainActivity.this,Calctwo_Activity.class);
+        startActivity(inten_two_calc);
 
+}
 
 
 
@@ -172,9 +172,15 @@ public void startActivity (){
                 break;
             case R.id.choice_button:
                 startActivity();
+
+
                 break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + v.getId());
+            case R.id.switch_themeNight:
+                    two_calc();
+                if (calc.switch_themeNight != null) {
+                    calc.switch_themeNight.setChecked(false);
+                }
+break;
         }
     }
 

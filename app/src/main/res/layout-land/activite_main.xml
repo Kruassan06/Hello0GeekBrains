@@ -2,8 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon_vaz21099"
-
+    android:theme="@style/Theme_Vaz_21099"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
@@ -80,6 +79,7 @@
         android:id="@+id/_4"
         style="@style/CalcButton_horizont_operation"
         android:text="@string/_4"
+
         android:layout_marginBottom="@dimen/between_up7_down1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -167,7 +167,6 @@
         android:id="@+id/_2"
         style="@style/CalcButton_horizont_operation"
         android:text="@string/_2"
-
         android:layout_marginBottom="@dimen/buttons_calc_two"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -178,7 +177,6 @@
     <Button
         android:id="@+id/_7"
         style="@style/CalcButton_horizont_operation"
-
         android:layout_marginBottom="@dimen/buttons_calc_up"
         android:text="@string/_7"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -194,8 +192,6 @@
         android:layout_height="39dp"
         android:layout_marginTop="128dp"
         android:backgroundTint="@color/white"
-
-
         android:focusable="false"
         android:gravity="right"
         android:paddingTop="2dp"
@@ -213,13 +209,7 @@
         android:id="@+id/text_number"
         android:layout_width="753dp"
         android:layout_height="33dp"
-        android:layout_marginTop="92dp"
-        android:background="#00000000"
-        android:gravity="right"
-        android:padding="3dp"
-        android:text=""
-        android:textColor="@color/white"
-        android:textSize="20dp"
+       style="@style/text_horizontal_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -236,6 +226,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.02"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/choice_button"
+        android:layout_width="52dp"
+        android:layout_height="44dp"
+        android:background="#00000000"
+        android:paddingBottom="10sp"
+        android:text="..."
+        android:textColor="@color/white"
+        android:textSize="29sp"
+        android:paddingLeft="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

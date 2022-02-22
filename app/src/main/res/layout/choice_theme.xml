@@ -9,27 +9,22 @@
         android:id="@+id/choice_textView"
         android:layout_width="match_parent"
         android:layout_height="76dp"
-
         android:fontFamily="serif-monospace"
-        android:text="choice theme"
+        android:text="@string/choice_theme"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textSize="46sp"
         android:textStyle="bold" />
     <Button
         android:id="@+id/choice_button_light"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#455a64"
-        android:text="Button" />
+        style="@style/Button_choice"
+        android:text="@string/light_theme"
+        />
     <Space
         android:layout_width="match_parent"
         android:layout_height="30dp" />
-
     <Button
         android:id="@+id/choice_button_night"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#455a64"
-        android:text="Button" />
+        style="@style/Button_choice"
+        android:text="@string/night_theme" />
 </LinearLayout>

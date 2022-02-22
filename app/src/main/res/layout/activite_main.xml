@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
 
     android:layout_height="match_parent"
-    android:background="@drawable/fon_vaz21099"
+   android:theme="@style/Theme_Vaz_21099"
     tools:context=".MainActivity">
     <Button
         android:id="@+id/_8"
@@ -173,6 +173,7 @@
         android:id="@+id/_7"
         style="@style/CalcButton"
         android:text="@string/_7"
+
         android:layout_marginBottom="@dimen/buttonSize_7_8_9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -220,6 +221,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Autofill,LabelFor,RtlHardcoded,SpUsage" />
 
+    <Switch
+        android:id="@+id/switch_themeNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
+        android:text="@string/next_theme"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <Button
         android:id="@+id/choice_button"
         android:layout_width="52dp"
@@ -229,7 +242,8 @@
         android:paddingBottom="10sp"
         android:text="..."
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="29sp"
+        android:paddingStart="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
         app:layout_constraintStart_toStartOf="parent"

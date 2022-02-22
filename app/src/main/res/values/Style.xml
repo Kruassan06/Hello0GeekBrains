@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
 <style name="CalcButton">
   <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_width">wrap_content</item>
-
+<item name="android:paddingLeft">17dp</item>
     <item name="android:text">wrap_content</item>
     <item name="android:textColor">@color/white</item>
     <item name="android:background">#00000000</item>
     <item name="android:textSize">24sp</item>
-
 </style>
+
+
+
 <style name="CalcButton_horizont_operation" parent="CalcButton">
     <item name= "android:layout_width">126dp</item>
     <item name= "android:layout_height">26dp</item>
-
-
+<item name="android:paddingLeft">20dp</item>
 </style>
 
 
@@ -22,27 +26,49 @@
     <style name="CalcButton_o">
         <item name="android:layout_width">65dp</item>
         <item name="android:layout_height">wrap_content</item>
-
+        <item name="android:paddingLeft">25dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:background">#00000000</item>
         <item name="android:textSize">24sp</item>
     </style>
 
 
-    <!--
 
-android:layout_width="98dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="240dp"
-        android:text="@string/_8"
-        android:textColor="@color/white"
-        android:background="#00000000"
-        android:textSize="24sp"
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+<style name="text_horizontal_style">
+    <item name="android:padding">3dp</item>
+    <item name="android:gravity">right</item>
+    <item name="android:text">""</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:layout_marginTop">92dp</item>
+    <item name="backgroundTint">#00000000</item>
+</style>
 
-    -->
 
-    
+
+<style name="Button_choice">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">"#455a64"</item>
+    <item name="android:paddingLeft">150dp</item>
+    <item name="android:textSize">26sp</item>
+    <item name="android:textStyle">bold|italic</item>
+</style>
+
+
+
+
+    <style name="Theme_Vaz_21099" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:background">@drawable/fon_vaz21099</item>
+    </style>
+
+
+
+    <style name="Theme_Vaz_2106" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/_d04784s_960</item>
+    </style>
+
+
+
 </resources>
