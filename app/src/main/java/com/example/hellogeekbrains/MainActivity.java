@@ -1,7 +1,9 @@
 package com.example.hellogeekbrains;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,13 +15,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 public static final String key_one = "key_one";
 public static final String key_two = "key_two";
+   // public static final String PREF_NAME1 = "";
+    public static final String PREF_NAME1 = "PREF_NAME1";
+    private static final String PREF_NAME_KEY1 = "";
+    private static final int REQEST_CODE = 0;
+
     final String TAG  = "";
 
 
     Calc_Variable calc = new Calc_Variable();
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        recreate();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+        setTheme(sharedPreferences.getInt(PREF_NAME1, R.style.Theme_HelloGeekBrains));
         setContentView(R.layout.activite_main);
 
    //region    Активация кнопок
@@ -104,9 +120,11 @@ public void two_calc (){
         startActivity(inten_two_calc);
 
 }
+    /*public int getAppTheme() {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_HelloGeekBrains);
 
-
-
+    }*/
 
     @Override
     public void onClick(View v) {
@@ -178,10 +196,13 @@ public void two_calc (){
             case R.id.switch_themeNight:
                     two_calc();
                 if (calc.switch_themeNight != null) {
+
                     calc.switch_themeNight.setChecked(false);
                 }
 break;
         }
+
+
     }
 
     public int calc ( int number, int numberTwo){
@@ -208,8 +229,28 @@ switch (calc.operation){
         return 0;
 
     }
+//что-то не так с кодом РАЗОБРАТЬСЯ
 
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode) {
+Intent choice = new Intent (MainActivity.this, chose_theme.class);
+//startActivityForResult(choice,requestCode);
+        super.startActivityForResult(intent, requestCode);
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+if (requestCode==REQEST_CODE&&resultCode==RESULT_OK){
+    if (data.getExtras()!=null ){
+data.getIntExtra(key_one,R.style.Theme_HelloGeekBrains);
+
+    }
+    recreate();
+
+}
+
+    }
 }
 
 

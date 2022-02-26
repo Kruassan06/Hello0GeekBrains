@@ -7,15 +7,20 @@
 
     <TextView
         android:id="@+id/choice_textView"
+        style="@style/Button_choice"
         android:layout_width="match_parent"
-        android:layout_height="76dp"
+        android:layout_height="62dp"
         android:fontFamily="serif-monospace"
+        android:paddingLeft="30dp"
         android:text="@string/choice_theme"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textSize="46sp"
         android:textStyle="bold" />
-    <Button
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <RadioButton
         android:id="@+id/choice_button_light"
         style="@style/Button_choice"
         android:text="@string/light_theme"
@@ -23,7 +28,7 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="30dp" />
-    <Button
+    <RadioButton
         android:id="@+id/choice_button_night"
         style="@style/Button_choice"
         android:text="@string/night_theme" />
