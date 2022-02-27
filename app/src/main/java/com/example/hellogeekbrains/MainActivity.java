@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 public static final String key_one = "key_one";
 public static final String key_two = "key_two";
-    private static final String PREF_NAME = "PREF_NAME1";
-    private static final String PREF_NAME_KEY = "PREF_NAME_KEY";
+    public static final String PREF_NAME1 = "PREF_NAME1";
+    public static final String PREF_NAME_KEY1 = "PREF_NAME_KEY";
     private static final int REQEST_CODE = 0;
 
     final String TAG  = "";
 
-
+chose_theme chose_theme = new chose_theme();
     Calc_Variable calc = new Calc_Variable();
 
     @Override
@@ -34,8 +34,8 @@ public static final String key_two = "key_two";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-      setTheme(getAppTheme());
+      //  SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+     // setTheme(getAppTheme());
         //  setTheme(sharedPreferences.getInt(PREF_NAME1, R.style.Theme_HelloGeekBrains));
         setContentView(R.layout.activite_main);
 
@@ -112,10 +112,10 @@ public static final String key_two = "key_two";
 
     }
 
-public void startActivity (){
+public void startActivity (int requestCode){
         Intent intent = new Intent(MainActivity.this, chose_theme.class);
         //startActivity(intent);
-    startActivityForResult(intent,REQEST_CODE);
+    startActivityForResult(intent,requestCode);
     }
 public void two_calc (){
         Intent inten_two_calc = new Intent(MainActivity.this,Calctwo_Activity.class);
@@ -123,8 +123,8 @@ public void two_calc (){
 
 }
     public int getAppTheme() {
-        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME, MODE_PRIVATE);
-        return sharedPreferences.getInt(PREF_NAME_KEY, R.style.Theme_HelloGeekBrains);
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_Vaz_2106);
 
     }
 
@@ -190,7 +190,7 @@ public void two_calc (){
 
                 break;
             case R.id.choice_button:
-                startActivity();
+                startActivity(REQEST_CODE);
 
 
                 break;

@@ -43,9 +43,9 @@ chose_theme.this.setResult(RESULT_OK,choice_themes);
 finish();
     }
     public void setAppTheme(int theme){
-        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME,MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(MainActivity.PREF_NAME1,MODE_PRIVATE);
         SharedPreferences.Editor editor= sharedPreferences.edit();
-        editor.putInt(PREF_NAME_KEY,theme);
+        editor.putInt(MainActivity.PREF_NAME1,theme);
         editor.apply();
     }
     public int getAppTheme(){
