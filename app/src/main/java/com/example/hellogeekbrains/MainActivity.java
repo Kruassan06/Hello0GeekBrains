@@ -15,9 +15,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 public static final String key_one = "key_one";
 public static final String key_two = "key_two";
-    public static final String PREF_NAME1 = "PREF_NAME1";
-    public static final String PREF_NAME_KEY1 = "PREF_NAME_KEY";
-    private static final int REQEST_CODE = 0;
+public static final String KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN = "key1";
+    public static final String PREF_NAME1 = "key_preference";
+    public static final String PREF_NAME_KEY1 = "key_preference_theme";
+    private static final int REQEST_CODE = 999;
 
     final String TAG  = "";
 
@@ -34,8 +35,8 @@ chose_theme chose_theme = new chose_theme();
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-      //  SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
-     // setTheme(getAppTheme());
+        //SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+      setTheme(getAppTheme());
         //  setTheme(sharedPreferences.getInt(PREF_NAME1, R.style.Theme_HelloGeekBrains));
         setContentView(R.layout.activite_main);
 
@@ -122,11 +123,6 @@ public void two_calc (){
         startActivity(inten_two_calc);
 
 }
-    public int getAppTheme() {
-        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
-        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_Vaz_2106);
-
-    }
 
     @Override
     public void onClick(View v) {
@@ -190,7 +186,8 @@ public void two_calc (){
 
                 break;
             case R.id.choice_button:
-                startActivity(REQEST_CODE);
+                Intent choice = new Intent (MainActivity.this, chose_theme.class);
+                startActivityForResult(choice,REQEST_CODE);
 
 
                 break;
@@ -226,30 +223,31 @@ switch (calc.operation){
         break;
     case 4:
         break;
+    default:
+        throw new IllegalStateException("Unexpected value: " + calc.operation);
 }
         return 0;
 
     }
 //что-то не так с кодом РАЗОБРАТЬСЯ
 
-    @Override
-    public void startActivityForResult(Intent intent, int requestCode) {
-Intent choice = new Intent (MainActivity.this, chose_theme.class);
-//startActivityForResult(choice,requestCode);
-        super.startActivityForResult(intent, requestCode);
-    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 if (requestCode==REQEST_CODE&&resultCode==RESULT_OK){
     if (data.getExtras()!=null ){
-data.getIntExtra(key_two,R.style.Theme_Vaz_2106);
+data.getIntExtra(KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN,R.style.ThemeOne);
 
     }
     recreate();
-
 }
+    }
+
+    public int getAppTheme() {
+        SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
+        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_Vaz_2106);
 
     }
 }

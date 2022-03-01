@@ -8,17 +8,21 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme_Vaz_21099." parent="Theme.AppCompat.DayNight.NoActionBar">
-
-
-
-
-
+    <style name="Theme_Vaz_21099." parent="Theme.AppCompat.Light.DarkActionBar">
+<item name="android:background">@drawable/fon_vaz21099</item>
+        <item name="android:backgroundTint">@color/purple_200</item>
     </style>
-    <style name="Theme_Vaz_2106." parent="Theme.AppCompat.DayNight.NoActionBar">
 
 
 
+
+
+
+    <style name="myButtonStyle" parent="Widget.AppCompat.ActionButton">
+
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 
