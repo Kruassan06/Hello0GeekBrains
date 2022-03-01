@@ -13,8 +13,5 @@
     <style name="ThemeOne" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:background">@drawable/_d04784s_960</item>
         <item name="android:backgroundTint">@color/purple_700</item>
-
-
-
     </style>
 </resources>
