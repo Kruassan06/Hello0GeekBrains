@@ -9,12 +9,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme_Vaz_21099">
+        android:theme="@style/Theme_ONE">
         <activity
             android:name=".Calctwo_Activity"
             android:exported="false" />
         <activity
-            android:name=".chose_theme"
+            android:name=".ChoseTheme"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

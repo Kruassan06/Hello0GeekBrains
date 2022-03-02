@@ -8,21 +8,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.CompoundButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-public static final String key_one = "key_one";
-public static final String key_two = "key_two";
-public static final String KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN = "key1";
+    public static final String key_one = "key_one";
+    public static final String key_two = "key_two";
+    public static final String KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN = "key1";
     public static final String PREF_NAME1 = "key_preference";
     public static final String PREF_NAME_KEY1 = "key_preference_theme";
     private static final int REQEST_CODE = 999;
 
-    final String TAG  = "";
+    final String TAG = "";
 
-chose_theme chose_theme = new chose_theme();
+    ChoseTheme ChoseTheme = new ChoseTheme();
     Calc_Variable calc = new Calc_Variable();
 
     @Override
@@ -34,37 +33,34 @@ chose_theme chose_theme = new chose_theme();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        //SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
-      setTheme(getAppTheme());
-        //  setTheme(sharedPreferences.getInt(PREF_NAME1, R.style.Theme_HelloGeekBrains));
+        setTheme(getAppTheme());
         setContentView(R.layout.activite_main);
 
-   //region    Активация кнопок
-       // calc.text_number = findViewById(R.id.text_number);
+        //region    Активация кнопок
+        // calc.text_number = findViewById(R.id.text_number);
         calc.editText = findViewById(R.id.edit_text);
-        calc.b0=findViewById(R.id._0);
-        calc.b1= findViewById(R.id._1);
-        calc.b2 =findViewById(R.id._2);
-        calc.b3 =findViewById(R.id._3);
-        calc.b4 =findViewById(R.id._4);
-        calc.b5 =findViewById(R.id._5);
-        calc.b6 =findViewById(R.id._6);
-        calc.b7=findViewById(R.id._7);
-        calc.b8=findViewById(R.id._8);
-        calc.b9=findViewById(R.id._9);
-        calc.bPlus =findViewById(R.id.button_plus);
-        calc.bMinus=findViewById(R.id.button_minus);
-        calc.clear=findViewById(R.id.clear);
-        calc.bDele=findViewById(R.id.button_del);
-        calc.umno=findViewById(R.id.button_umn);
+        calc.b0 = findViewById(R.id._0);
+        calc.b1 = findViewById(R.id._1);
+        calc.b2 = findViewById(R.id._2);
+        calc.b3 = findViewById(R.id._3);
+        calc.b4 = findViewById(R.id._4);
+        calc.b5 = findViewById(R.id._5);
+        calc.b6 = findViewById(R.id._6);
+        calc.b7 = findViewById(R.id._7);
+        calc.b8 = findViewById(R.id._8);
+        calc.b9 = findViewById(R.id._9);
+        calc.bPlus = findViewById(R.id.button_plus);
+        calc.bMinus = findViewById(R.id.button_minus);
+        calc.clear = findViewById(R.id.clear);
+        calc.bDele = findViewById(R.id.button_del);
+        calc.umno = findViewById(R.id.button_umn);
         calc.ravno = findViewById(R.id.button_ravn);
         calc.theme = findViewById(R.id.choice_button);
         calc.switch_themeNight = findViewById(R.id.switch_themeNight);
-     //   calc.switch_themeNight = findViewById(R.id.switch_themeNight);
+        //   calc.switch_themeNight = findViewById(R.id.switch_themeNight);
 
 //        calc.switch_themeNight.setOnClickListener(this);
-       // calc.text_number.setOnClickListener(this);
+        // calc.text_number.setOnClickListener(this);
         calc.b0.setOnClickListener(this);
         calc.b1.setOnClickListener(this);
         calc.b2.setOnClickListener(this);
@@ -82,56 +78,59 @@ chose_theme chose_theme = new chose_theme();
         calc.umno.setOnClickListener(this);
         calc.ravno.setOnClickListener(this);
         calc.theme.setOnClickListener(this);
-       calc.switch_themeNight.setOnClickListener(this);
+        calc.switch_themeNight.setOnClickListener(this);
 
-    //endregion
+        //endregion
     }
-     //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
+    //   Log.d(TAG, "onCreate() called with: savedInstanceState = [" + savedInstanceState + "]");
 
     protected void onResume() {
         super.onResume();
         //calc.editText.append(calc.TextView_One);
-    //    calc.text_number.append(calc.TextView_Two);
+        //    calc.text_number.append(calc.TextView_Two);
         Log.d(TAG, "onResume() called");
 
     }
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-     outState.putString(key_one, calc.editText.getText().toString());
+        outState.putString(key_one, calc.editText.getText().toString());
 
-        }
+    }
+
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.d(TAG, "onRestoreInstanceState() called");
 
         //calc.text_number.setText(savedInstanceState.getString(key_two));// восстанавливаю после убитого процесса
-     calc.editText.setText(savedInstanceState.getString(key_one));
+        calc.editText.setText(savedInstanceState.getString(key_one));
 
 
     }
 
-public void startActivity (int requestCode){
-        Intent intent = new Intent(MainActivity.this, chose_theme.class);
+    public void startActivity(int requestCode) {
+        Intent intent = new Intent(MainActivity.this, ChoseTheme.class);
         //startActivity(intent);
-    startActivityForResult(intent,requestCode);
+        startActivityForResult(intent, requestCode);
     }
-public void two_calc (){
-        Intent inten_two_calc = new Intent(MainActivity.this,Calctwo_Activity.class);
+
+    public void two_calc() {
+        Intent inten_two_calc = new Intent(MainActivity.this, Calctwo_Activity.class);
         startActivity(inten_two_calc);
 
-}
+    }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id._0:
                 calc.editText.append(calc.b0.getText());
                 break;
-           case R.id._1:
-               calc.editText.append(calc.b1.getText());
+            case R.id._1:
+                calc.editText.append(calc.b1.getText());
 
                 break;
             case R.id._2:
@@ -143,7 +142,9 @@ public void two_calc (){
             case R.id._4:
                 calc.editText.append(calc.b4.getText());
                 break;
-            case R.id._5: calc.editText.append(calc.b5.getText());break;
+            case R.id._5:
+                calc.editText.append(calc.b5.getText());
+                break;
             case R.id._6:
                 calc.editText.append(calc.b6.getText());
                 break;
@@ -170,8 +171,8 @@ public void two_calc (){
             case R.id.button_plus:
                 calc.numberOne = Integer.parseInt(calc.editText.getText().toString());
                 calc.operation = 2;
-                    calc.editText.setText("");
-                    break;
+                calc.editText.setText("");
+                break;
             case R.id.clear:
 
                 calc.editText.setText(null);
@@ -182,72 +183,71 @@ public void two_calc (){
                 break;
             case R.id.button_ravn:
                 calc.numberTwo = Integer.parseInt(calc.editText.getText().toString());
-                calc(calc.numberOne,calc.numberTwo);
+                calc(calc.numberOne, calc.numberTwo);
 
                 break;
             case R.id.choice_button:
-                Intent choice = new Intent (MainActivity.this, chose_theme.class);
-                startActivityForResult(choice,REQEST_CODE);
+                Intent choice = new Intent(MainActivity.this, ChoseTheme.class);
+                startActivityForResult(choice, REQEST_CODE);
 
 
                 break;
             case R.id.switch_themeNight:
-                    two_calc();
+                two_calc();
                 if (calc.switch_themeNight != null) {
 
                     calc.switch_themeNight.setChecked(false);
                 }
-break;
+                break;
         }
 
 
     }
 
-    public int calc ( int number, int numberTwo){
-switch (calc.operation){
-    case 0:
-        number = number * numberTwo;
-        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
-        break;
-    case 1:
-        number = number - numberTwo;
-        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
-        break;
-    case 2:
-        number = number + numberTwo;
-        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
-        break;
-    case 3:
-        number = number / numberTwo;
-        calc.editText.setText(String.format(String.valueOf(number), numberTwo));
-        break;
-    case 4:
-        break;
-    default:
-        throw new IllegalStateException("Unexpected value: " + calc.operation);
-}
+    public int calc(int number, int numberTwo) {
+        switch (calc.operation) {
+            case 0:
+                number = number * numberTwo;
+                calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+                break;
+            case 1:
+                number = number - numberTwo;
+                calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+                break;
+            case 2:
+                number = number + numberTwo;
+                calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+                break;
+            case 3:
+                number = number / numberTwo;
+                calc.editText.setText(String.format(String.valueOf(number), numberTwo));
+                break;
+            case 4:
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + calc.operation);
+        }
         return 0;
 
     }
 //что-то не так с кодом РАЗОБРАТЬСЯ
 
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-if (requestCode==REQEST_CODE&&resultCode==RESULT_OK){
-    if (data.getExtras()!=null ){
-data.getIntExtra(KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN,R.style.ThemeOne);
+        if (requestCode == REQEST_CODE && resultCode == RESULT_OK) {
+            if (data.getExtras() != null) {
+                data.getIntExtra(KEY_INTENT_THEME_FROM_SECOUND_TO_MAIN, R.style.Theme_TWO);
 
-    }
-    recreate();
-}
+            }
+            recreate();
+        }
     }
 
     public int getAppTheme() {
         SharedPreferences sharedPreferences = getSharedPreferences(PREF_NAME1, MODE_PRIVATE);
-        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_Vaz_2106);
+        return sharedPreferences.getInt(PREF_NAME_KEY1, R.style.Theme_TWO);
 
     }
 }
