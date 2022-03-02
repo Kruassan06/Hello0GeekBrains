@@ -61,6 +61,7 @@
     <!-- Тема вторая    -->
     <style name="Theme_TWO" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:background">@drawable/fon_vaz21099</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 
 
