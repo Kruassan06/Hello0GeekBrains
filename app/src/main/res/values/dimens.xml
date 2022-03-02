@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="buttons_calc_up">130dp</dimen>
+    <dimen name="between_up7_down1">90dp</dimen>
+    <dimen name="buttons_calc_two">50dp</dimen>
+    <dimen name="buttons_calc_down">10dp</dimen>
+    <dimen name="down_buttonSize">60dp</dimen>
+    <dimen name="ButtonSize_1_2_3">120dp</dimen>
+    <dimen name="buttonSize_4_5_6">180dp</dimen>
+    <dimen name="buttonSize_7_8_9">240dp</dimen>
+</resources>

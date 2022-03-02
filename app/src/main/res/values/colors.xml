@@ -10,5 +10,7 @@
     <color name="screenBackground">#FFEE58</color>
     <color name="buttonBackground">#98FB98</color>
     <color name="textcolor">#FF687800</color>
+    <color name="day_button">#e6ceff</color>
+
 
 </resources>

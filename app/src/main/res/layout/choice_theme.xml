@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#b0bec5"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/choice_textView"
+        style="@style/Button_choice"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:fontFamily="serif-monospace"
+        android:paddingLeft="30dp"
+        android:text="@string/choice_theme"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="46sp"
+        android:textStyle="bold" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <RadioButton
+        android:id="@+id/choice_button_light"
+        style="@style/Button_choice"
+        android:text="@string/light_theme"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <RadioButton
+        android:id="@+id/choice_button_night"
+        style="@style/Button_choice"
+        android:text="@string/night_theme" />
+</LinearLayout>
